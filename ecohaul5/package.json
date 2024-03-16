@@ -13,7 +13,6 @@
         "test": "vitest"
     },
     "dependencies": {
-        "@auth0/auth0-react": "^2.2.4",
         "@react-oauth/google": "^0.12.1",
         "@vechain/dapp-kit": "*",
         "@vechain/dapp-kit-react": "*",
