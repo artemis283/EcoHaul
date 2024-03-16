@@ -1,3 +1,5 @@
+import logo from './shopping_logo.jpeg'; // Import the image
+
 import {
     WalletButton,
     useWallet,
@@ -29,12 +31,11 @@ function App() {
     }, [account, onConnectionStatusChange]);
 
     return (
-        <div className="container">
-            <h2>React JS</h2>
-            <div className="label">kit button:</div>
+        <div className="container" style={{ backgroundColor: 'white', padding: '20px', boxSizing: 'border-box', maxWidth: '100%', margin: '0 auto' }}>
+            {/* Use the imported image */}
+            <img src={logo} alt="Logo" style={{ maxWidth: '50px', maxHeight: '50px' }}/> 
+            <h2 style={{ fontFamily: "'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif", marginBottom: '20px'}}>EcoHaul</h2> {/* Change font family here */}
             <WalletButton />
-            <div className="label">custom button:</div>
-            <button onClick={open}>{buttonText}</button>
         </div>
     );
 }
