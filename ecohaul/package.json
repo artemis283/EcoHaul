@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vechain/connex": "^2.1.0",
+    "@vechain/web3-providers-connex": "^1.1.2",
     "vue": "^3.4.21"
   },
   "devDependencies": {
