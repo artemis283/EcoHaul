@@ -8,7 +8,7 @@ import {
 import { useEffect, useState } from 'react';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
-function App() {
+export default function App() {
     const { account } = useWallet();
     const { open, onConnectionStatusChange } = useWalletModal();
     const [buttonText, setButtonText] = useState('Connect Custom Button');
@@ -35,7 +35,7 @@ function App() {
         onConnectionStatusChange(handleConnected);
     }, [account, onConnectionStatusChange]);
 
-    function LoginDiv({}) {
+    function LoginDiv() {
         if (isWalletConnected && isGoogleConnected) {
           return null;
         }
@@ -66,4 +66,3 @@ function App() {
     );
 }
 
-export default App;
