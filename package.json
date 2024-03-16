@@ -1,0 +1,28 @@
+{
+  "name": "ecohaul",
+  "version": "1.0.0",
+  "description": "dApp to track aerospace part service life to optimise repair and maximise part usage before scrappage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artemis283/EcoHaul.git"
+  },
+  "keywords": [
+    "ecohaul",
+    "aerospace",
+    "maintenance",
+    "overhaul",
+    "repair",
+    "sustainability",
+    "reuse"
+  ],
+  "author": "Artemis Webster,Alexander Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artemis283/EcoHaul/issues"
+  },
+  "homepage": "https://github.com/artemis283/EcoHaul#readme"
+}
