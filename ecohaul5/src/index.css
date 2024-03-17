@@ -9,6 +9,9 @@ body {
 h2 {
     margin: 0;
 }
+ul {
+    list-style-type: none;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -18,7 +21,26 @@ h2 {
     border-radius: 10px;
     padding: 10px;
 }
+.itemsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    border: 1px solid rgb(212, 150, 220);
+    border-radius: 10px;
+    padding: 10px;
+}
 .label {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+.item {
+    align-items: left;
+}
+.thumbnail {
+    width: 100px;
+    padding-right: 10px;
+}
+.claimButton {
+    margin-left: 10px;
 }
