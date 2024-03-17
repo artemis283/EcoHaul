@@ -1,4 +1,5 @@
 import logo from './shopping_logo.jpeg'; // Import the image
+import Navbar from './Navbar.tsx'
 
 import {
     WalletButton,
@@ -38,7 +39,7 @@ function App() {
                 <img src={logo} alt="Logo" style={{ maxWidth: '50px', maxHeight: '50px' }}/> 
                 <h2 style={{ fontFamily: "'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif", marginBottom: '20px'}}>EcoHaul</h2> {/* Change font family here */}
                 <WalletButton />
-                <div className="label">Sign into your eBay account with Google:</div>
+                <div className="label" style={{ fontFamily: "'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif"}}>Sign into eBay with Google:</div>
                 <GoogleLogin
                     onSuccess={credentialResponse => {
                         console.log(credentialResponse);
@@ -48,6 +49,7 @@ function App() {
                     }}
                 />
             </div>
+            <Navbar/>
         </GoogleOAuthProvider>
     );
 }
